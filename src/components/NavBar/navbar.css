@@ -30,7 +30,7 @@
 }
 
 .desktopMenuBtn{
-    font-size: 18px;
+    font-size: 1rem;
     background: white;
     padding: 10px 20px;
     color: black;
@@ -43,4 +43,45 @@
 .active{
     color: #4adfd3;
     border-bottom: 2px solid #4adfd3;
+}
+
+
+
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+}
+
+.listItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30,30,30);
+    border-radius: 0.5rem;
+}
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+@media screen and (max-width:720px) {
+    .mobMenu{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .desktopMenuBtn{
+        display: none;
+    }
 }
