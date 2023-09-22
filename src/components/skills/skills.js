@@ -12,7 +12,11 @@ const skills = () => {
         <span className='skillsDesc'>A problem solver with multitasking with code and design</span>
         <div className='skillsBars'>
             <div className='skillsBar'>
-                <img src={Coding} alt='' className='skillsImg'></img>
+                <img
+                    src={Coding} 
+                    alt='' 
+                    className='skillsImg'>
+                </img>
                 <div className='skillsText'>
                     <h2>Programming Skills</h2>
                     <p>Java, C, C++</p>

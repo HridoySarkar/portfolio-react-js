@@ -25,7 +25,6 @@ const Navbar = () => {
             <Link className='destopmMenuListItem'>Home</Link>
             <Link className='destopmMenuListItem'>About</Link>
             <Link className='destopmMenuListItem'>Portfolio</Link>
-            <Link className='destopmMenuListItem'>Clients</Link>
         </div>
         <button className='desktopMenuBtn'>
          Contact Me  <BsFillChatLeftDotsFill  size={18}/>
