@@ -20,13 +20,18 @@ const Navbar = () => {
 
   return (
     <nav className='navbar' id='navbar'>
-        <img alt='Logo' src={logo} className='logo'></img>
+        <img alt='Logo' src={logo} className='logo' onClick={()=>{
+            document.getElementById('intro').scrollIntoView({behavior:'smooth'});
+        }}>
+        </img>
         <div className="desktopMenu">
-            <Link className='destopmMenuListItem'>Home</Link>
-            <Link className='destopmMenuListItem'>About</Link>
-            <Link className='destopmMenuListItem'>Portfolio</Link>
+            <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='destopmMenuListItem'>Home</Link>
+            <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-80} duration={500} className='destopmMenuListItem'>About</Link>
+            <Link activeClass='active' to='works' spy={true} smooth={true} offset={-80} duration={500} className='destopmMenuListItem'>Portfolio</Link>
         </div>
-        <button className='desktopMenuBtn'>
+        <button className='desktopMenuBtn' onClick={()=>{
+            document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+          }}>
          Contact Me  <BsFillChatLeftDotsFill  size={18}/>
         </button>
     </nav>
