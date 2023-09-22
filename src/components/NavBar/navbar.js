@@ -23,6 +23,7 @@ const Navbar = () => {
         <img alt='Logo' src={logo} className='logo' onClick={()=>{
             document.getElementById('intro').scrollIntoView({behavior:'smooth'});
         }}>
+
         </img>
         <div className="desktopMenu">
             <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='destopmMenuListItem'>Home</Link>
@@ -31,6 +32,7 @@ const Navbar = () => {
         </div>
         <button className='desktopMenuBtn' onClick={()=>{
             document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+
           }}>
          Contact Me  <BsFillChatLeftDotsFill  size={18}/>
         </button>
