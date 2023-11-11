@@ -11,7 +11,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_tec91rx', 'template_rihhzwl', form.current, 'KhrH0fcXfdFexsz08')
+    emailjs.sendForm('service_tec91rx', 'template_rihhzwl', form.current, 'keys')
       .then((result) => {
           console.log(result.text);
           <Alert severity="success">
