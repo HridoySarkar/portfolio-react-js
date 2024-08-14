@@ -3,10 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/styles/app.css">
 </head>
 <body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+        
+        .roboto{
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+          }
+        
+        
+        :root{
+            --border: 1px solid red;
+        }
+        .box{
+            border: var(--border);
+            margin: 5px;
+            padding: 5px;
+            background-color: wheat;
+        }
+        
+        .header{
+            display: grid;
+            grid-template-columns: 180px 1fr 100px;
+            background-color: aquamarine;
+            column-gap: 10px;
+        }
+        .links{
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: max-content;
+            justify-content: end;
+        }
+    </style>
+    <nav class="box header">
+            <div class="logo box roboto">Logo</div>
+            <div class="nav_links box">
+                <ul class="links">
+                    <li class="box roboto">Home</li>
+                    <li class="box roboto">about</li>
+                    <li class="box roboto">contact</li>
+                    <li class="box roboto">projects</li>
+                    <li class="box roboto">Services</li>
+                </ul>
+            </div>
+            <div class="contact_btn box roboto">Contact</div>
+    </nav>
+
+    <!-- Banner Section -->
+    <style>
+        .banner{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        .social_links{
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: max-content;
+            justify-content: space-around;
+        }
+        .download_social{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+
+
+     <div class="box banner">
+        <div class="box">
+            <div class="box">
+                <h2 class="roboto">I am Gerold</h2>
+            </div>
+            <div class="box">
+                <h1 class="roboto">Web Developer +
+                    UX Designer</h1>
+            </div>
+            <div class="box">
+                <p class="roboto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maxime possimus amet aspernatur aut officia ullam dolorem magnam deleniti. Distinctio?</p>
+            </div>
+            <div class="box download_social">
+                <div class="box download">Download</div>
+                <div class="box">
+                    <ul class="social_links">
+                        <li>twitter</li>
+                        <li>www</li>
+                        <li>LinkedIn</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://themejunction.net/html/gerold/demo/assets/img/hero/me.png" alt="">
+        </div>
+     </div>
+
+<!-- Quality Services -->
+
+     <style>
+        .services_title{
+            display: grid;
+            justify-content: center;
+            text-align: center;
+        }
+     </style>
+
+     <div class="box">
+        <div class="box services_title">
+            <h1 class="roboto">My Quality Services</h1>
+            <p class="roboto"> We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers. </p>
+        </div>
+        <div class="box">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+     </div>
+
+
     
 </body>
 </html>
