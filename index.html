@@ -4,61 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/styles/app.css">
 </head>
 <body>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
         
-        .roboto{
-            font-family: "Roboto Condensed", sans-serif;
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+            
+        
+        .sora {
+            font-family: "Sora", sans-serif;
             font-optical-sizing: auto;
-            font-weight: 400;
             font-style: normal;
           }
+          
         
         
         :root{
-            --border: 1px solid red;
+            
         }
         .box{
             border: var(--border);
             margin: 5px;
             padding: 5px;
-            background-color: wheat;
         }
         
         .header{
             display: grid;
-            grid-template-columns: 180px 1fr 100px;
-            background-color: aquamarine;
+            grid-template-columns: 250px 1fr 150px;
+            max-width: 1300px;
+            margin: 0 auto;
             column-gap: 10px;
+            padding-top: 20px;
+            align-items: center;
         }
         .links{
             display: grid;
             grid-auto-flow: column;
             grid-auto-columns: max-content;
             justify-content: end;
+            
+            .link{
+                color: #2a1454;
+                font: 600;
+                font-size: 15px;
+                font-weight: 500;
+                margin: 10px 20px 10px 20px;
+                cursor: pointer;
+                
+            }
+        }
+        .contact_btn{
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 15px 0px;
+            border-radius: 30px;
+            color: white;
+            background: rgb(131,78,241);
+background: linear-gradient(90deg, rgba(131,78,241,1) 0%, rgba(48,24,96,1) 100%);
+        }
+        .logo{
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            justify-content: center;
+            align-items: center;
+            .mailto{
+                margin-left: 40px;
+            }
+            
         }
     </style>
     <nav class="box header">
-            <div class="logo box roboto">Logo</div>
+            <div class="logo box roboto"><img src="https://themejunction.net/html/gerold/demo/assets/img/logo/logo-dark.png" alt="">
+             <div class="mailto sora">mail@gmail.com</div>
+            </div>
             <div class="nav_links box">
                 <ul class="links">
-                    <li class="box roboto">Home</li>
-                    <li class="box roboto">about</li>
-                    <li class="box roboto">contact</li>
-                    <li class="box roboto">projects</li>
-                    <li class="box roboto">Services</li>
+                    <li class="box link sora">Home</li>
+                    <li class="box link sora">About</li>
+                    <li class="box link sora">Services</li>
+                    <li class="box link sora">Portfolio</li>
+                    <li class="box link sora">Blogs +</li>
+                    <li class="box link sora">Contact</li>
                 </ul>
             </div>
-            <div class="contact_btn box roboto">Contact</div>
+            <button class="contact_btn box sora">Hire Me!</button>
     </nav>
 
     <!-- Banner Section -->
     <style>
         .banner{
+            max-width: 1300px;
+            margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: center;
@@ -68,10 +108,38 @@
             grid-auto-flow: column;
             grid-auto-columns: max-content;
             justify-content: space-around;
+            align-items: center;
+            color: #834ef1;
+            margin-top: 10px;
+            font-size: 20px;
         }
         .download_social{
             display: grid;
             grid-template-columns: 1fr 1fr;
+        }
+        .developer{
+            font-size: 36px;
+            font-weight: 700;
+            color: #2a1454;
+        }
+        .text_details{
+            font-size: 50px;
+            font-weight: 700;
+            color: #834ef1;
+            color: linear-gradient(90deg, rgba(131,78,241,1) 0%, rgba(48,24,96,1) 100%);
+        }
+        .title_des{
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            color: #140c1c;            ;
+        }
+        .download{
+            width: 200px;
+            padding: 15px 40px;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #834ef1;
         }
     </style>
 
@@ -79,23 +147,23 @@
      <div class="box banner">
         <div class="box">
             <div class="box">
-                <h2 class="roboto">I am Gerold</h2>
+                <h2 class="sora developer">I am Gerold</h2>
             </div>
             <div class="box">
-                <h1 class="roboto">Web Developer +
+                <h1 class="sora text_details">Web Developer +
                     UX Designer</h1>
             </div>
             <div class="box">
-                <p class="roboto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maxime possimus amet aspernatur aut officia ullam dolorem magnam deleniti. Distinctio?</p>
+                <p class="sora title_des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maxime possimus amet aspernatur aut officia ullam dolorem magnam deleniti. Distinctio?</p>
             </div>
             <div class="box download_social">
-                <div class="box download">Download</div>
+                <button class="box download sora">Download CV</button>
                 <div class="box">
                     <ul class="social_links">
-                        <li>twitter</li>
-                        <li>www</li>
-                        <li>LinkedIn</li>
-                        <li>Git</li>
+                        <li class="sora"><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li class="sora"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="sora"><i class="fa-solid fa-globe"></i></li>
+                        <li class="sora"><i class="fa-brands fa-github"></i></li>
                     </ul>
                 </div>
             </div>
@@ -110,17 +178,13 @@
      <style>
         .services_title{
             display: grid;
-            justify-content: center;
-            text-align: center;
+            grid-template-columns: 1fr 1fr 1fr;
         }
      </style>
 
      <div class="box">
         <div class="box services_title">
-            <h1 class="roboto">My Quality Services</h1>
-            <p class="roboto"> We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers. </p>
-        </div>
-        <div class="box">
+            <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
         </div>
