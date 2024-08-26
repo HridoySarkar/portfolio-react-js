@@ -4,79 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="./assets/js/plugins/lightbox/lightbox-plus-jquery.min.js"></script>
+    <script src="./assets/js/plugins/lightbox/lightbox.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/styles/app.css">
 </head>
 <body>
 
-    <style>
-        
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-            
-        
-        .sora {
-            font-family: "Sora", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-          }
-          
-        
-        
-        :root{
-            
-        }
-        .box{
-            border: var(--border);
-            margin: 5px;
-            padding: 5px;
-        }
-        
-        .header{
-            display: grid;
-            grid-template-columns: 250px 1fr 150px;
-            max-width: 1300px;
-            margin: 0 auto;
-            column-gap: 10px;
-            padding-top: 20px;
-            align-items: center;
-        }
-        .links{
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: max-content;
-            justify-content: end;
-            
-            .link{
-                color: #2a1454;
-                font: 600;
-                font-size: 15px;
-                font-weight: 500;
-                margin: 10px 20px 10px 20px;
-                cursor: pointer;
-                
-            }
-        }
-        .contact_btn{
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: 700;
-            padding: 15px 0px;
-            border-radius: 30px;
-            color: white;
-            background: rgb(131,78,241);
-background: linear-gradient(90deg, rgba(131,78,241,1) 0%, rgba(48,24,96,1) 100%);
-        }
-        .logo{
-            display: grid;
-            grid-template-columns: 60px 1fr;
-            justify-content: center;
-            align-items: center;
-            .mailto{
-                margin-left: 40px;
-            }
-            
-        }
-    </style>
+    
     <nav class="box header">
             <div class="logo box roboto"><img src="https://themejunction.net/html/gerold/demo/assets/img/logo/logo-dark.png" alt="">
              <div class="mailto sora">mail@gmail.com</div>
@@ -95,53 +32,6 @@ background: linear-gradient(90deg, rgba(131,78,241,1) 0%, rgba(48,24,96,1) 100%)
     </nav>
 
     <!-- Banner Section -->
-    <style>
-        .banner{
-            max-width: 1300px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-        }
-        .social_links{
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: max-content;
-            justify-content: space-around;
-            align-items: center;
-            color: #834ef1;
-            margin-top: 10px;
-            font-size: 20px;
-        }
-        .download_social{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .developer{
-            font-size: 36px;
-            font-weight: 700;
-            color: #2a1454;
-        }
-        .text_details{
-            font-size: 50px;
-            font-weight: 700;
-            color: #834ef1;
-            color: linear-gradient(90deg, rgba(131,78,241,1) 0%, rgba(48,24,96,1) 100%);
-        }
-        .title_des{
-            font-size: 20px;
-            font-weight: 300;
-            font-style: normal;
-            color: #140c1c;            ;
-        }
-        .download{
-            width: 200px;
-            padding: 15px 40px;
-            border-radius: 30px;
-            color: #fff;
-            background-color: #834ef1;
-        }
-    </style>
 
 
      <div class="box banner">
@@ -157,40 +47,88 @@ background: linear-gradient(90deg, rgba(131,78,241,1) 0%, rgba(48,24,96,1) 100%)
                 <p class="sora title_des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maxime possimus amet aspernatur aut officia ullam dolorem magnam deleniti. Distinctio?</p>
             </div>
             <div class="box download_social">
-                <button class="box download sora">Download CV</button>
+                <button class="box download sora">Download CV <i class="fa-solid fa-download"></i></button>
                 <div class="box">
                     <ul class="social_links">
-                        <li class="sora"><i class="fa-brands fa-linkedin-in"></i></li>
-                        <li class="sora"><i class="fa-brands fa-twitter"></i></li>
-                        <li class="sora"><i class="fa-solid fa-globe"></i></li>
-                        <li class="sora"><i class="fa-brands fa-github"></i></li>
+                        <li class="sora social_link"><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li class="sora social_link"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="sora social_link"><i class="fa-solid fa-globe"></i></li>
+                        <li class="sora social_link"><i class="fa-brands fa-github"></i></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="box">
+        <div class="box banner_img">
             <img src="https://themejunction.net/html/gerold/demo/assets/img/hero/me.png" alt="">
         </div>
      </div>
 
-<!-- Quality Services -->
 
-     <style>
-        .services_title{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-     </style>
+     <!-- counter part -->
 
-     <div class="box">
-        <div class="box services_title">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+     <div class="counter_part" x-data="">
+        <template x-for="(counter_item, index) in conter_list">
+            <div class="box">
+                <div class="counter_item sora">
+                    <h4 class="count_amount">
+                        <span :class="'counter_box'+(index+1)" x-text="counter_item.counter_amount"></span>
+                        <span x-text="counter_item.counter_unit"></span>
+                    </h4>
+                    <div class="count_title">
+                        <p x-text="counter_item.counter_label_top"></p>
+                        <p x-text="counter_item.counter_label_bottom"></p>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <section class="services_work">
+        <div class="container sora">
+            <div class="box services_heading">
+                <div class="section_heading">
+                    <h1 class="text-center">My projects</h1>
+                </div>
+                <div class="section_pg">
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, tenetur?
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <ul class="project_filter">
+                    <li>
+                        <a class="fltr-controls" data-filter="all" href="javascript:void();">All</a>
+                    </li>
+                    <li>
+                        <a class="fltr-controls" data-filter="ux" href="javascript:void();">Ux</a>
+                    </li>
+                    <li>
+                        <a class="fltr-controls" data-filter="design" href="javascript:void();">Design</a>
+                    </li>
+                    <li>
+                        <a class="fltr-controls" data-filter="development" href="javascript:void();">Development</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box gallery_container">
+                <div class="project_list" x-data="">
+                    <template x-for="i in gallery_images">
+                        <div class="filtr-item" x-bind:data-category="i.category" data-sort="value" class="project_item">
+                            <a :href="i.image" data-lightbox="project">
+                                <img :src="i.image" alt="">
+                            </a>
+                        </div>
+                    </template>
+                </div>
+            </div>
         </div>
-     </div>
+    </section>
 
 
-    
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/plugins/filterizr.min.js"></script>
+    <script src="./assets/js/plugins/countMe.min.js"></script>
+    <script src="./assets/js/dependancy.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+.counter_part {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+
+    .counter_item {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .count_amount {
+            font-weight: 600;
+            font-size: 40px;
+            color:#834ef1;
+        }
+
+        .count_title {
+            p {
+                margin: 5px 0px;
+            }
+        }
+    }
+}

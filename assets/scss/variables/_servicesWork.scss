@@ -1,0 +1,162 @@
+.services_work{
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.services_heading{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    .section_heading{
+        .text-center{
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            background: -webkit-linear-gradient(90deg, rgba(131,78,241,1) 0%, rgba(48,24,96,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.project_filter{
+    display: flex;
+    justify-content: center;
+    li{
+        margin-left: 20px;
+    }
+}
+
+.gallery_images{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* General section styles */
+.services_work {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.container.sora {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.box {
+    margin-bottom: 30px;
+}
+
+/* Heading styles */
+.services_heading .section_heading h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.services_heading .section_pg p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Filter controls */
+.project_filter {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.project_filter li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.project_filter .fltr-controls {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 5px 0;
+}
+
+.project_filter .fltr-controls:hover {
+    border-bottom: 2px solid #007bff;
+    color: #0056b3;
+}
+
+/* Gallery container */
+.gallery_container {
+    position: relative;
+}
+
+.project_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+    gap: 15px; /* Space between items */
+}
+
+/* Project item styles */
+.filtr-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Ensures items do not exceed 600px */
+    height: 600px; /* Fixed height to ensure square images */
+}
+
+.filtr-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.filtr-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Lightbox styles (if needed) */
+[data-lightbox] {
+    display: block;
+    position: relative;
+}
+
+[data-lightbox]::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .services_heading .section_heading h1 {
+        font-size: 2rem;
+    }
+
+    .project_filter li {
+        margin: 0 5px;
+    }
+
+    .project_filter .fltr-controls {
+        font-size: 0.875rem;
+    }
+
+    .project_list {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+}
