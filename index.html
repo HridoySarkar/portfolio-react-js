@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Hridoy - Portfolio</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="./assets/js/plugins/lightbox/lightbox-plus-jquery.min.js"></script>
     <script src="./assets/js/plugins/lightbox/lightbox.min.js"></script>
+    <link rel="stylesheet" href="./assets/js/plugins/lightbox/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/js/plugins/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/js/plugins/owl/assets/owl.theme.green.min.css">
     <link rel="stylesheet" href="./assets/styles/app.css">
 </head>
 <body>
@@ -114,7 +117,7 @@
             <div class="box gallery_container">
                 <div class="project_list" x-data="">
                     <template x-for="i in gallery_images">
-                        <div class="filtr-item" x-bind:data-category="i.category" data-sort="value" class="project_item">
+                        <div class="filtr-item gallery_item" x-bind:data-category="i.category" data-sort="value" class="project_item">
                             <a :href="i.image" data-lightbox="project">
                                 <img :src="i.image" alt="">
                             </a>
@@ -126,9 +129,54 @@
     </section>
 
 
+
+
+    <!-- client stories -->
+
+    <section class="main_width">
+        <div class="box">
+            <h3 class="client_stories_title">My Client's Stories</h3>
+            <p class="client_stories_desc">Empowering people in new a digital journey with my super services</p>
+        </div>
+        <div class="box">
+            <div class="owl-carousel">
+                <div class="item"><h4>1</h4></div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+                <div class="item"><h4>6</h4></div>
+                <div class="item"><h4>7</h4></div>
+                <div class="item"><h4>8</h4></div>
+                <div class="item"><h4>9</h4></div>
+                <div class="item"><h4>10</h4></div>
+                <div class="item"><h4>11</h4></div>
+                <div class="item"><h4>12</h4></div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/plugins/filterizr.min.js"></script>
     <script src="./assets/js/plugins/countMe.min.js"></script>
     <script src="./assets/js/dependancy.js"></script>
+    <script src="./assets/js/plugins/owl/owl.carousel.min.js"></script>
 </body>
 </html>

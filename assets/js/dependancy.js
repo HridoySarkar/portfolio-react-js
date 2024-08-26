@@ -31,19 +31,19 @@ var conter_list = [
 
 var gallery_images = [
     {
-        image: './assets/images/img1.jpg',
+        image: './assets/images/img1.webp',
         category: 'all',
     },
     {
-        image: './assets/images/img4.png',
+        image: './assets/images/img2.webp',
         category: 'ux',
     },
     {
-        image: './assets/images/img1.jpg',
+        image: './assets/images/img3.webp',
         category: 'design'
     },
     {
-        image: './assets/images/img4.png',
+        image: './assets/images/img4.webp',
         category: 'development',
     },
 ]

@@ -211,7 +211,7 @@ img {
 }
 .counter_part .counter_item .count_amount {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 50px;
   color: #834ef1;
 }
 .counter_part .counter_item .count_title p {
@@ -257,10 +257,9 @@ img {
   align-items: center;
 }
 
-/* General section styles */
 .services_work {
   padding: 60px 0;
-  background-color: #f9f9f9;
+  background-color: #e9e2f8;
 }
 
 .container.sora {
@@ -273,7 +272,6 @@ img {
   margin-bottom: 30px;
 }
 
-/* Heading styles */
 .services_heading .section_heading h1 {
   font-size: 2.5rem;
   color: #333;
@@ -293,82 +291,9 @@ img {
   text-align: center;
 }
 
-.project_filter li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.project_filter .fltr-controls {
-  font-size: 1rem;
-  color: #007bff;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  padding: 5px 0;
-}
-
-.project_filter .fltr-controls:hover {
-  border-bottom: 2px solid #007bff;
-  color: #0056b3;
-}
-
-/* Gallery container */
-.gallery_container {
-  position: relative;
-}
-
-.project_list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2-column layout */
-  gap: 15px; /* Space between items */
-}
-
-/* Project item styles */
-.filtr-item {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 600px; /* Ensures items do not exceed 600px */
-  height: 600px; /* Fixed height to ensure square images */
-}
-
-.filtr-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure images cover the container */
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.filtr-item:hover img {
-  transform: scale(1.1);
-}
-
-/* Lightbox styles (if needed) */
-[data-lightbox] {
-  display: block;
-  position: relative;
-}
-
-[data-lightbox]::after {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .services_heading .section_heading h1 {
-    font-size: 2rem;
-  }
-  .project_filter li {
-    margin: 0 5px;
-  }
-  .project_filter .fltr-controls {
-    font-size: 0.875rem;
-  }
-  .project_list {
-    grid-template-columns: 1fr; /* Single column layout on small screens */
-  }
+.main_width {
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=app.css.map */
